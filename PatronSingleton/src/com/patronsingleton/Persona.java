@@ -2,7 +2,7 @@ package com.patronsingleton;
 
 public class Persona {
 	private static Persona persona;
-	private static String nombre;
+	private String nombre;
 
 	public Persona(String nombre) {
 		super();
@@ -19,5 +19,13 @@ public class Persona {
 			persona = new Persona(nombre);
 		}
 		return persona;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 }
