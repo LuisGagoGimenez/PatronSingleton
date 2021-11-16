@@ -2,13 +2,18 @@ package com.patronbuilder;
 
 public class Persona {
 	private String nombre;
+	private String apellidos;
 
-	public Persona(String nombre) {
-		super();
-		this.nombre = nombre;
+	public Persona() {
 	}
 
+	public String getApellidos() {
+		return apellidos;
+	}
 
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
 
 	public String getNombre() {
 		return nombre;
